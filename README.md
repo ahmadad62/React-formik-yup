@@ -1,4 +1,24 @@
-# Getting Started with Create React App
+# Code Description:
+
+This code is a React functional component that creates a form for a user to sign up for an account. It uses the `'useFormik'` hook from the formik library and the `Yup` library for form validation.
+
+ The `useFormik` hook takes an object with several properties as its argument, including:
+- initialValues: an object containing the initial values for the form inputs
+- `validationSchema`: an object that defines the validation rules for the form inputs using Yup. In this case, it defines that the firstName and lastName inputs must be less than 15 and 20 characters respectively and are required, and the email input must be a valid email and required.
+- `onSubmit`: a callback function that is called when the form is submitted. In this case, it simply logs the values of the form inputs to the console.
+The component then renders a form with three inputs for first name, last name and email, and a submit button. Each input has `onChange`, `onBlur` handlers that are passed down by useFormik to update the form state and handle validation.
+It also uses ternary operator to check if formik.touched and formik.errors for each input fields and if true it will display the error message next to the input field.
+When the form is submitted, it will call the onSubmit function and log the formik.values to the console.
+
+You can find more information and examples on how to use the useFormik hook and the Yup library in the official Formik and `Yup` documentation:
+
+Formik documentation
+Yup documentation
+
+
+
+# Genral Information about React
+## Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -9,8 +29,7 @@ In the project directory, you can run:
 ### `npm start`
 
 Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.https://www.youtube.com/watch?v=vJtyp1YmOpc
 The page will reload when you make changes.\
 You may also see any lint errors in the console.
 
@@ -68,3 +87,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+- https://www.youtube.com/watch?v=vJtyp1YmOpc
